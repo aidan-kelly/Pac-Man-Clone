@@ -1,0 +1,96 @@
+[gd_scene load_steps=11 format=3 uid="uid://dckfurn8304fe"]
+
+[ext_resource type="Texture2D" uid="uid://br2yjj2758y2y" path="res://resources/sprites/clyde.png" id="1_d5ux2"]
+[ext_resource type="Script" path="res://scripts/clyde.gd" id="1_ndwwl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30t5g"]
+atlas = ExtResource("1_d5ux2")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftnwf"]
+atlas = ExtResource("1_d5ux2")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bk2lp"]
+atlas = ExtResource("1_d5ux2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbfae"]
+atlas = ExtResource("1_d5ux2")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gu7o2"]
+atlas = ExtResource("1_d5ux2")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8wwu"]
+atlas = ExtResource("1_d5ux2")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mptbk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30t5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ftnwf")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bk2lp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbfae")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gu7o2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8wwu")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_usr8q"]
+radius = 3.0
+
+[node name="Clyde" type="CharacterBody2D"]
+collision_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_ndwwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mptbk")
+animation = &"walk_right"
+autoplay = "walk_right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_usr8q")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="LeaveHouseTimer" type="Timer" parent="."]
+wait_time = 15.0
+one_shot = true
+autostart = true
+
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="LeaveHouseTimer" to="." method="_on_leave_house_timer_timeout"]

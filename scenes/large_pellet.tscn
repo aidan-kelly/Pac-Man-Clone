@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxx4nd6iwfk1x"]
+
+[ext_resource type="Texture2D" uid="uid://pr70f5q6n6kt" path="res://resources/sprites/pac_man_large_pellet.png" id="1_b4myo"]
+[ext_resource type="Script" path="res://scripts/large_pellet.gd" id="1_ke46p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tvkwq"]
+radius = 1.0
+
+[node name="LargePellet" type="Area2D"]
+script = ExtResource("1_ke46p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_b4myo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_tvkwq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

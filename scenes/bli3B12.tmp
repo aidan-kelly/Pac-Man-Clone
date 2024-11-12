@@ -1,0 +1,91 @@
+[gd_scene load_steps=11 format=3 uid="uid://c2d3hjrntwwn7"]
+
+[ext_resource type="Script" path="res://scripts/blinky.gd" id="1_be1te"]
+[ext_resource type="Texture2D" uid="uid://jpdd7i8la76u" path="res://resources/sprites/blinky.png" id="1_l1o30"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dy3p3"]
+atlas = ExtResource("1_l1o30")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_agydk"]
+atlas = ExtResource("1_l1o30")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jb02"]
+atlas = ExtResource("1_l1o30")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hjj8"]
+atlas = ExtResource("1_l1o30")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ar53i"]
+atlas = ExtResource("1_l1o30")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aanhl"]
+atlas = ExtResource("1_l1o30")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w0x5s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dy3p3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_agydk")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5jb02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hjj8")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ar53i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aanhl")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ldsds"]
+radius = 3.0
+
+[node name="Blinky" type="CharacterBody2D"]
+collision_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_be1te")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w0x5s")
+animation = &"walk_right"
+autoplay = "walk_right"
+frame_progress = 0.156595
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ldsds")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
