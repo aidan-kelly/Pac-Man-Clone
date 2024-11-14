@@ -2,9 +2,12 @@ extends CharacterBody2D
 class_name GhostBase
 
 const speed = 50
+var scatter_index = 0
 @export var player: Node2D
 @export var out_of_house_marker: Node2D
+@export var scatter_path_parent: Node2D
 @onready var nav_agent := $NavigationAgent2D as NavigationAgent2D
+@onready var scatter_path := scatter_path_parent.get_children()
 
 var out_of_house = false
 var allowed_out = true
@@ -35,18 +38,31 @@ func _physics_process(delta: float) -> void:
 			collider.hit()
 
 func make_path() -> void:
-	#nav_agent.target_position = player.global_position
 	if out_of_house:
 		nav_agent.target_position = player.global_position
 	else:
 		nav_agent.target_position = out_of_house_marker.global_position
 
+func make_scatter_path() -> void:
+	if out_of_house:
+		nav_agent.target_position = scatter_path[scatter_index].global_position
+	else:
+		nav_agent.target_position = out_of_house_marker.global_position
+
 func _on_timer_timeout() -> void:
-	make_path()
+	if Globals.scatter:
+		make_scatter_path()
+	else:
+		make_path()
 
 func _on_navigation_agent_2d_target_reached() -> void:
 	if !out_of_house:
 		out_of_house = true
+	else:
+		if scatter_index == scatter_path.size() - 1:
+			scatter_index = 0
+		else:
+			scatter_index += 1
 
 func _on_leave_house_timer_timeout() -> void:
 	allowed_out = true

@@ -1,11 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://c1niskvptwi03"]
+[gd_scene load_steps=27 format=3 uid="uid://c1niskvptwi03"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_nalkv"]
 [ext_resource type="Texture2D" uid="uid://c88pmnehr2se6" path="res://resources/tilemaps/pacman_tilemap.png" id="1_xgawq"]
 [ext_resource type="PackedScene" uid="uid://dpidm2oipc883" path="res://scenes/player.tscn" id="2_u6ueq"]
 [ext_resource type="Texture2D" uid="uid://bxcnw8cob5qys" path="res://resources/tilemaps/blue_pac_man_tileset.png" id="2_wvvux"]
-[ext_resource type="PackedScene" uid="uid://cma5r611xfoyn" path="res://scenes/small_pellet.tscn" id="3_evsoa"]
-[ext_resource type="PackedScene" uid="uid://bxx4nd6iwfk1x" path="res://scenes/large_pellet.tscn" id="4_7lkad"]
 [ext_resource type="Texture2D" uid="uid://dg40byq17sipu" path="res://resources/tilemaps/clear_nav_path.png" id="4_yj58p"]
 [ext_resource type="FontFile" uid="uid://cthjbqidca6cn" path="res://resources/fonts/PixelOperator8.ttf" id="5_71uuh"]
 [ext_resource type="PackedScene" uid="uid://c2d3hjrntwwn7" path="res://scenes/blinky.tscn" id="9_ii1yy"]
@@ -258,740 +256,6 @@ tile_set = SubResource("TileSet_qohas")
 format = 2
 layer_0/tile_data = PackedInt32Array(2162715, 196608, 3, 2162688, 131072, 3, 2097179, 65536, 1, 2031643, 65536, 1, 1966107, 65536, 1, 1900571, 65536, 1, 2162689, 65536, 0, 2162690, 65536, 0, 2162691, 65536, 0, 2162692, 65536, 0, 2162693, 65536, 0, 2162694, 65536, 0, 2162695, 65536, 0, 2162696, 65536, 0, 2162697, 65536, 0, 2162698, 65536, 0, 2162699, 65536, 0, 2162700, 65536, 0, 2162701, 65536, 0, 2162702, 65536, 0, 2162703, 65536, 0, 2162704, 65536, 0, 2162705, 65536, 0, 2162706, 65536, 0, 2162707, 65536, 0, 2162708, 65536, 0, 2162709, 65536, 0, 2162710, 65536, 0, 2162711, 65536, 0, 2162712, 65536, 0, 2162713, 65536, 0, 2162714, 65536, 0, 2097152, 0, 1, 2031616, 0, 1, 1966080, 0, 1, 1900544, 0, 1, 1835035, 65536, 4, 1835008, 0, 4, 1769472, 0, 3, 1769499, 65536, 3, 1703963, 65536, 1, 1638427, 65536, 1, 1572891, 65536, 1, 1507355, 65536, 1, 1703936, 0, 1, 1638400, 0, 1, 1572864, 0, 1, 1507328, 0, 1, 1441792, 131072, 2, 1441819, 196608, 2, 1441818, 0, 0, 1441817, 0, 0, 1441816, 0, 0, 1441815, 0, 0, 1441793, 0, 0, 1441794, 0, 0, 1441795, 0, 0, 1441796, 0, 0, 1441797, 196608, 1, 1441814, 131072, 1, 1376278, 65536, 1, 1310742, 65536, 1, 1245206, 65536, 1, 1376261, 0, 1, 1310725, 0, 1, 1245189, 0, 1, 1179670, 131072, 0, 1179653, 196608, 0, 1179671, 65536, 0, 1179672, 65536, 0, 1179673, 65536, 0, 1179674, 65536, 0, 1179675, 65536, 0, 1179652, 65536, 0, 1179651, 65536, 0, 1179650, 65536, 0, 1179649, 65536, 0, 1179648, 65536, 0, 1048576, 0, 0, 1048577, 0, 0, 1048578, 0, 0, 1048579, 0, 0, 1048580, 0, 0, 1048599, 0, 0, 1048600, 0, 0, 1048601, 0, 0, 1048602, 0, 0, 1048603, 0, 0, 1048581, 196608, 1, 1048598, 131072, 1, 983062, 65536, 1, 917526, 65536, 1, 851990, 65536, 1, 983045, 0, 1, 917509, 0, 1, 851973, 0, 1, 786437, 196608, 0, 786455, 65536, 0, 786454, 131072, 0, 786456, 65536, 0, 786457, 65536, 0, 786458, 65536, 0, 786436, 65536, 0, 786435, 65536, 0, 786434, 65536, 0, 786433, 65536, 0, 786432, 131072, 3, 786459, 196608, 3, 720923, 65536, 1, 655387, 65536, 1, 589851, 65536, 1, 524315, 65536, 1, 458779, 65536, 1, 393243, 65536, 1, 327707, 65536, 1, 262171, 65536, 1, 720896, 0, 1, 655360, 0, 1, 589824, 0, 1, 524288, 0, 1, 458752, 0, 1, 393216, 0, 1, 327680, 0, 1, 262144, 0, 1, 196608, 131072, 2, 196635, 196608, 2, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196623, 0, 0, 196624, 0, 0, 196625, 0, 0, 196626, 0, 0, 196627, 0, 0, 196628, 0, 0, 196629, 0, 0, 196630, 0, 0, 196631, 0, 0, 196632, 0, 0, 196633, 0, 0, 196634, 0, 0, 196621, 0, 2, 196622, 65536, 2, 262157, 262144, 0, 327693, 262144, 0, 393229, 262144, 0, 262158, 262144, 1, 327694, 262144, 1, 393230, 262144, 1, 458765, 131072, 1, 458766, 196608, 1, 1835010, 196608, 1, 1769474, 196608, 0, 1769473, 327680, 1, 1835009, 327680, 0, 1835034, 327680, 0, 1769498, 327680, 1, 1769497, 131072, 0, 1835033, 131072, 1, 1179655, 131072, 0, 1376264, 262144, 1, 1376263, 262144, 0, 1441799, 131072, 1, 1441800, 196608, 1, 1179656, 196608, 0, 1245191, 262144, 0, 1245192, 262144, 1, 1310728, 262144, 1, 1310727, 262144, 0, 983047, 262144, 0, 917511, 262144, 0, 851975, 262144, 0, 851976, 262144, 2, 917512, 262144, 1, 983048, 262144, 1, 786439, 262144, 0, 1048584, 196608, 1, 1048583, 131072, 1, 786440, 262144, 3, 786452, 262144, 1, 786451, 327680, 3, 1048596, 196608, 1, 1048595, 131072, 1, 851988, 262144, 1, 917524, 262144, 1, 983060, 262144, 1, 851987, 327680, 2, 917523, 262144, 0, 983059, 262144, 0, 1245203, 262144, 0, 1310739, 262144, 0, 1376275, 262144, 0, 1245204, 262144, 1, 1310740, 262144, 1, 1376276, 262144, 1, 1179667, 131072, 0, 1179668, 196608, 0, 1441812, 196608, 1, 1441811, 131072, 1, 2031618, 131072, 1, 1966082, 131072, 0, 2031641, 196608, 1, 1966105, 196608, 0, 2031619, 327680, 0, 2031620, 327680, 0, 2031621, 327680, 0, 2031622, 327680, 0, 1966083, 327680, 1, 1966084, 327680, 1, 1966085, 327680, 1, 1966086, 327680, 1, 2031640, 327680, 0, 2031639, 327680, 0, 2031638, 327680, 0, 2031637, 327680, 0, 1966104, 327680, 1, 1966103, 327680, 1, 1966102, 327680, 1, 1966101, 327680, 1, 2031623, 327680, 0, 2031624, 327680, 0, 2031625, 327680, 0, 2031626, 327680, 0, 2031627, 196608, 1, 1966091, 196608, 0, 1966090, 327680, 1, 1966089, 327680, 1, 1966087, 327680, 3, 1966088, 262144, 3, 1900551, 262144, 0, 1835015, 262144, 0, 1900552, 262144, 1, 1835016, 262144, 1, 1769479, 131072, 0, 1769480, 196608, 0, 2031636, 327680, 0, 2031635, 327680, 0, 2031634, 327680, 0, 2031633, 327680, 0, 1966097, 327680, 1, 1966098, 327680, 1, 2031632, 131072, 1, 1966096, 131072, 0, 1966100, 262144, 3, 1966099, 327680, 3, 1900563, 262144, 0, 1835027, 262144, 0, 1835028, 262144, 1, 1900564, 262144, 1, 1769491, 131072, 0, 1769492, 196608, 0, 2031629, 131072, 1, 2031630, 196608, 1, 1966093, 262144, 0, 1900557, 262144, 0, 1966094, 262144, 1, 1900558, 262144, 1, 1835021, 327680, 2, 1835022, 262144, 2, 1835020, 327680, 0, 1835019, 327680, 0, 1835023, 327680, 0, 1835024, 327680, 0, 1835018, 131072, 1, 1835025, 196608, 1, 1769482, 131072, 0, 1769489, 196608, 0, 1769483, 327680, 1, 1769484, 327680, 1, 1769485, 327680, 1, 1769486, 327680, 1, 1769487, 327680, 1, 1769488, 327680, 1, 1835012, 131072, 1, 1835013, 196608, 1, 1703941, 262144, 1, 1769477, 262144, 1, 1638405, 262144, 1, 1769476, 262144, 0, 1703940, 262144, 0, 1638404, 327680, 2, 1638403, 327680, 0, 1638402, 131072, 1, 1572866, 131072, 0, 1572867, 327680, 1, 1572868, 327680, 1, 1572869, 196608, 0, 1572871, 131072, 0, 1638407, 131072, 1, 1638408, 327680, 0, 1638409, 327680, 0, 1638410, 327680, 0, 1572872, 327680, 1, 1572873, 327680, 1, 1572874, 327680, 1, 1572875, 196608, 0, 1638411, 196608, 1, 1835031, 196608, 1, 1835030, 131072, 1, 1769495, 262144, 1, 1703959, 262144, 1, 1769494, 262144, 0, 1703958, 262144, 0, 1638422, 262144, 0, 1572886, 131072, 0, 1572887, 327680, 1, 1572888, 327680, 1, 1638424, 327680, 0, 1638423, 262144, 2, 1638425, 196608, 1, 1572889, 196608, 0, 1572884, 196608, 0, 1638420, 196608, 1, 1638419, 327680, 0, 1638418, 327680, 0, 1638417, 327680, 0, 1572883, 327680, 1, 1572882, 327680, 1, 1572881, 327680, 1, 1572880, 131072, 0, 1638416, 131072, 1, 1638413, 131072, 1, 1638414, 196608, 1, 1572877, 262144, 0, 1507341, 262144, 0, 1572878, 262144, 1, 1507342, 262144, 1, 1441805, 327680, 2, 1441806, 262144, 2, 1441804, 327680, 0, 1441803, 327680, 0, 1441807, 327680, 0, 1441808, 327680, 0, 1441809, 196608, 1, 1441802, 131072, 1, 1376266, 131072, 0, 1376273, 196608, 0, 1376272, 327680, 1, 1376271, 327680, 1, 1376270, 327680, 1, 1376269, 327680, 1, 1376268, 327680, 1, 1376267, 327680, 1, 1245194, 393216, 1, 1245195, 0, 0, 1245196, 0, 0, 1245197, 0, 0, 1245198, 0, 0, 1245199, 0, 0, 1245200, 0, 0, 1245201, 458752, 1, 1179658, 65536, 1, 1114122, 65536, 1, 1048586, 65536, 1, 1179665, 0, 1, 1114129, 0, 1, 1048593, 0, 1, 983050, 393216, 0, 983057, 458752, 0, 983051, 65536, 0, 983056, 65536, 0, 327682, 131072, 0, 393218, 262144, 0, 458754, 131072, 1, 327683, 327680, 1, 327684, 327680, 1, 458755, 327680, 0, 458756, 327680, 0, 458757, 196608, 1, 327685, 196608, 0, 393221, 262144, 1, 327705, 196608, 0, 393241, 262144, 1, 458777, 196608, 1, 458776, 327680, 0, 458775, 327680, 0, 327704, 327680, 1, 327703, 327680, 1, 458774, 131072, 1, 327702, 131072, 0, 393238, 262144, 0, 327700, 196608, 0, 458772, 196608, 1, 393236, 262144, 1, 458771, 327680, 0, 458770, 327680, 0, 458769, 327680, 0, 327699, 327680, 1, 327698, 327680, 1, 327697, 327680, 1, 327696, 131072, 0, 458768, 131072, 1, 393232, 262144, 0, 327687, 131072, 0, 458759, 131072, 1, 327688, 327680, 1, 327689, 327680, 1, 327690, 327680, 1, 458760, 327680, 0, 458761, 327680, 0, 458762, 327680, 0, 327691, 196608, 0, 458763, 196608, 1, 393223, 262144, 0, 393227, 262144, 1, 589826, 131072, 0, 655362, 131072, 1, 589829, 196608, 0, 655365, 196608, 1, 589827, 327680, 1, 589828, 327680, 1, 655363, 327680, 0, 655364, 327680, 0, 655383, 327680, 0, 655384, 327680, 0, 589847, 327680, 1, 589848, 327680, 1, 655385, 196608, 1, 589849, 196608, 0, 589846, 131072, 0, 655382, 131072, 1, 589831, 131072, 0, 589832, 196608, 0, 655367, 262144, 0, 720903, 262144, 0, 655368, 262144, 1, 720904, 262144, 1, 786441, 327680, 1, 786442, 327680, 1, 851977, 327680, 0, 851978, 327680, 0, 786443, 196608, 0, 851979, 196608, 1, 589844, 196608, 0, 589843, 131072, 0, 655379, 262144, 0, 720915, 262144, 0, 655380, 262144, 1, 720916, 262144, 1, 851986, 327680, 0, 851985, 327680, 0, 786450, 327680, 1, 786449, 327680, 1, 786448, 131072, 0, 851984, 131072, 1, 589834, 131072, 0, 655370, 131072, 1, 589841, 196608, 0, 655377, 196608, 1, 589835, 327680, 1, 589836, 327680, 1, 589837, 327680, 1, 589838, 327680, 1, 589839, 327680, 1, 589840, 327680, 1, 655371, 327680, 0, 655372, 327680, 0, 655376, 327680, 0, 655375, 327680, 0, 655373, 327680, 2, 655374, 262144, 2, 720909, 262144, 0, 786445, 262144, 0, 720910, 262144, 1, 786446, 262144, 1, 851981, 131072, 1, 851982, 196608, 1, 1114112, 65539, 0, 1114113, 65539, 0, 1114114, 65539, 0, 1114115, 65539, 0, 1114116, 65539, 0, 1114117, 65539, 0, 1114118, 3, 2, 1179654, 3, 0, 1245190, 3, 0, 1310726, 3, 0, 1376262, 3, 0, 1441798, 3, 0, 1507334, 3, 2, 1572870, 3, 0, 1638406, 3, 0, 1703942, 196611, 2, 1769478, 3, 0, 1835014, 3, 0, 1900550, 196611, 1, 1900549, 65539, 0, 1900548, 65539, 0, 1900547, 196611, 3, 1900546, 65539, 0, 1900545, 131075, 0, 1507333, 65539, 0, 1507332, 65539, 0, 1507331, 65539, 0, 1507330, 65539, 0, 1507329, 131075, 0, 1572865, 3, 0, 1638401, 3, 0, 1703937, 131075, 1, 1703938, 65539, 0, 1703939, 196611, 0, 1769475, 3, 0, 1835011, 3, 0, 1966081, 3, 0, 2031617, 3, 0, 2097153, 131075, 1, 2097154, 65539, 0, 2097155, 65539, 0, 2097156, 65539, 0, 2097157, 65539, 0, 2097158, 65539, 0, 2097159, 65539, 0, 2097160, 65539, 0, 2097161, 65539, 0, 2097162, 65539, 0, 2097163, 65539, 0, 2097164, 196611, 3, 2097165, 65539, 0, 2097166, 65539, 0, 2097167, 196611, 3, 2097168, 65539, 0, 2097169, 65539, 0, 2097170, 65539, 0, 2097171, 65539, 0, 2097172, 65539, 0, 2097173, 65539, 0, 2097174, 65539, 0, 2097175, 65539, 0, 2097176, 65539, 0, 2097177, 65539, 0, 2097178, 196611, 1, 1900570, 196611, 0, 1966106, 3, 0, 2031642, 3, 0, 1703943, 65539, 0, 1703944, 65539, 0, 1703945, 131075, 3, 1703946, 65539, 0, 1703947, 65539, 0, 1703948, 196611, 3, 1703949, 65539, 0, 1703950, 65539, 0, 1703951, 196611, 3, 1703952, 65539, 0, 1703953, 65539, 0, 1703954, 131075, 3, 1703955, 65539, 0, 1703956, 65539, 0, 1703957, 131075, 2, 1769481, 3, 0, 1835017, 3, 0, 1900553, 131075, 1, 1900554, 65539, 0, 1900555, 65539, 0, 1900556, 196611, 0, 1966092, 3, 0, 2031628, 3, 0, 1769490, 3, 0, 1835026, 3, 0, 1900562, 196611, 1, 1900561, 65539, 0, 1900560, 65539, 0, 1900559, 131075, 0, 1966095, 3, 0, 2031631, 3, 0, 1507349, 3, 2, 1572885, 3, 0, 1638421, 3, 0, 1769493, 3, 0, 1835029, 3, 0, 1900565, 131075, 1, 1900566, 65539, 0, 1900567, 65539, 0, 1900568, 196611, 3, 1900569, 65539, 0, 1376277, 3, 0, 1441813, 3, 0, 1507350, 65539, 0, 1507351, 65539, 0, 1507352, 65539, 0, 1507353, 65539, 0, 1507354, 196611, 0, 1572890, 3, 0, 1638426, 3, 0, 1703962, 196611, 1, 1703961, 65539, 0, 1703960, 131075, 0, 1769496, 3, 0, 1835032, 3, 0, 262165, 131075, 3, 327701, 3, 0, 393237, 3, 0, 458773, 3, 0, 524309, 3, 2, 589845, 3, 0, 655381, 3, 0, 720917, 196611, 2, 786453, 3, 0, 851989, 3, 0, 917525, 3, 0, 983061, 3, 0, 1048597, 3, 0, 1114133, 3, 2, 1179669, 3, 0, 1245205, 3, 0, 1310741, 3, 0, 1507348, 65539, 0, 1507347, 65539, 0, 1507346, 196611, 3, 1507345, 65539, 0, 1507344, 65539, 0, 1507343, 131075, 0, 1572879, 3, 0, 1638415, 3, 0, 917522, 196611, 0, 983058, 3, 0, 1048594, 3, 0, 1114130, 196611, 2, 1179666, 3, 0, 1245202, 3, 0, 1310738, 131075, 2, 1376274, 3, 0, 1441810, 3, 0, 917513, 131075, 0, 983049, 3, 0, 1048585, 3, 0, 1114121, 131075, 2, 1179657, 3, 0, 1245193, 3, 0, 1310729, 196611, 2, 1376265, 3, 0, 1441801, 3, 0, 1507337, 196611, 3, 1114119, 65539, 0, 1114120, 65539, 0, 1114134, 65539, 0, 1114135, 65539, 0, 1114136, 65539, 0, 1114137, 65539, 0, 1114138, 65539, 0, 1114139, 65539, 0, 1114140, 393216, 2, 1114141, 393216, 2, 1179647, 393216, 2, 1179646, 393216, 2, 917514, 65539, 0, 917515, 65539, 0, 917516, 196611, 3, 917517, 131075, 3, 917518, 131075, 3, 917519, 196611, 3, 917520, 65539, 0, 917521, 65539, 0, 1310737, 65539, 0, 1310736, 65539, 0, 1310735, 65539, 0, 1310734, 65539, 0, 1310733, 65539, 0, 1310732, 65539, 0, 1310731, 65539, 0, 1310730, 65539, 0, 1507335, 65539, 0, 1507336, 65539, 0, 1507338, 65539, 0, 1507339, 65539, 0, 1507340, 196611, 0, 1572876, 3, 0, 1638412, 3, 0, 1114132, 65539, 0, 1114131, 65539, 0, 983054, 3, 0, 262156, 196611, 0, 262155, 65539, 0, 262154, 65539, 0, 262153, 65539, 0, 262152, 65539, 0, 262151, 65539, 0, 262150, 131075, 3, 262149, 65539, 0, 262148, 65539, 0, 262147, 65539, 0, 262146, 65539, 0, 262145, 131075, 0, 327681, 3, 0, 393217, 3, 0, 458753, 3, 0, 524289, 196611, 2, 589825, 3, 0, 655361, 3, 0, 720897, 131075, 1, 720898, 65539, 0, 720899, 65539, 0, 720900, 65539, 0, 720901, 65539, 0, 720902, 131075, 2, 327686, 3, 0, 393222, 3, 0, 458758, 3, 0, 524294, 3, 2, 589830, 3, 0, 655366, 3, 0, 786438, 3, 0, 851974, 3, 0, 917510, 3, 0, 983046, 3, 0, 1048582, 3, 0, 524290, 65539, 0, 524291, 65539, 0, 524292, 65539, 0, 524293, 65539, 0, 524295, 65539, 0, 524296, 65539, 0, 524297, 131075, 3, 524298, 65539, 0, 524299, 65539, 0, 524300, 196611, 3, 524301, 65539, 0, 524302, 65539, 0, 524303, 196611, 3, 524304, 65539, 0, 524305, 65539, 0, 524306, 131075, 3, 524307, 65539, 0, 524308, 65539, 0, 524310, 65539, 0, 524311, 65539, 0, 524312, 65539, 0, 524313, 65539, 0, 524314, 131075, 2, 327692, 3, 0, 393228, 3, 0, 458764, 3, 0, 589833, 3, 0, 655369, 3, 0, 720905, 131075, 1, 720906, 65539, 0, 720907, 65539, 0, 720908, 196611, 0, 786444, 3, 0, 851980, 3, 0, 851983, 3, 0, 786447, 3, 0, 720911, 131075, 0, 720912, 65539, 0, 720913, 65539, 0, 720914, 196611, 1, 655378, 3, 0, 589842, 3, 0, 458767, 3, 0, 393231, 3, 0, 327695, 3, 0, 262159, 131075, 0, 262160, 65539, 0, 262161, 65539, 0, 262162, 65539, 0, 262163, 65539, 0, 262164, 65539, 0, 262166, 65539, 0, 262167, 65539, 0, 262168, 65539, 0, 262169, 65539, 0, 262170, 196611, 0, 327706, 3, 0, 393242, 3, 0, 458778, 3, 0, 589850, 3, 0, 655386, 3, 0, 720922, 196611, 1, 720921, 65539, 0, 720920, 65539, 0, 720919, 65539, 0, 720918, 65539, 0, 983055, 65536, 0, 983052, 65536, 0, 983053, 3, 0, 1048590, 3, 0, 1048589, 3, 0, 1114125, 196611, 3, 1114126, 196611, 3, 1114127, 65539, 0, 1114124, 65539, 0)
 
-[node name="Pellets" type="Node2D" parent="."]
-
-[node name="SmallPellet" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 36)
-
-[node name="SmallPellet2" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(20, 36)
-
-[node name="SmallPellet3" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 36)
-
-[node name="SmallPellet4" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(36, 36)
-
-[node name="SmallPellet5" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(44, 36)
-
-[node name="SmallPellet6" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 36)
-
-[node name="SmallPellet7" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(60, 36)
-
-[node name="SmallPellet8" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(68, 36)
-
-[node name="SmallPellet9" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 36)
-
-[node name="SmallPellet10" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(84, 36)
-
-[node name="SmallPellet11" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(92, 36)
-
-[node name="SmallPellet12" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 36)
-
-[node name="SmallPellet13" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 44)
-
-[node name="SmallPellet14" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 52)
-
-[node name="SmallPellet15" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 60)
-
-[node name="SmallPellet16" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 68)
-
-[node name="SmallPellet174" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 76)
-
-[node name="SmallPellet175" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 84)
-
-[node name="SmallPellet176" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 92)
-
-[node name="SmallPellet177" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(84, 92)
-
-[node name="SmallPellet178" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(92, 92)
-
-[node name="SmallPellet179" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 92)
-
-[node name="SmallPellet180" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 92)
-
-[node name="SmallPellet181" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(132, 92)
-
-[node name="SmallPellet182" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(140, 92)
-
-[node name="SmallPellet183" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 92)
-
-[node name="SmallPellet184" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 84)
-
-[node name="SmallPellet185" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 76)
-
-[node name="SmallPellet186" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 68)
-
-[node name="SmallPellet187" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(140, 68)
-
-[node name="SmallPellet188" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(132, 68)
-
-[node name="SmallPellet189" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 68)
-
-[node name="SmallPellet190" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(116, 68)
-
-[node name="SmallPellet191" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(108, 68)
-
-[node name="SmallPellet192" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 60)
-
-[node name="SmallPellet193" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 52)
-
-[node name="SmallPellet194" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 44)
-
-[node name="SmallPellet195" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 36)
-
-[node name="SmallPellet196" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(132, 36)
-
-[node name="SmallPellet197" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(140, 36)
-
-[node name="SmallPellet198" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 36)
-
-[node name="SmallPellet199" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(156, 36)
-
-[node name="SmallPellet200" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(164, 36)
-
-[node name="SmallPellet201" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 36)
-
-[node name="SmallPellet202" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(180, 36)
-
-[node name="SmallPellet203" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(188, 36)
-
-[node name="SmallPellet204" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 36)
-
-[node name="SmallPellet205" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(204, 36)
-
-[node name="SmallPellet206" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 36)
-
-[node name="SmallPellet207" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 44)
-
-[node name="SmallPellet208" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 60)
-
-[node name="SmallPellet209" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 68)
-
-[node name="SmallPellet210" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 76)
-
-[node name="SmallPellet211" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 84)
-
-[node name="SmallPellet212" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 92)
-
-[node name="SmallPellet213" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(204, 92)
-
-[node name="SmallPellet214" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 92)
-
-[node name="SmallPellet215" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(188, 92)
-
-[node name="SmallPellet216" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(180, 92)
-
-[node name="SmallPellet217" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 92)
-
-[node name="SmallPellet218" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 84)
-
-[node name="SmallPellet219" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 76)
-
-[node name="SmallPellet220" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 68)
-
-[node name="SmallPellet221" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(164, 68)
-
-[node name="SmallPellet222" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(156, 68)
-
-[node name="SmallPellet223" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 60)
-
-[node name="SmallPellet224" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 52)
-
-[node name="SmallPellet225" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 44)
-
-[node name="SmallPellet226" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(188, 68)
-
-[node name="SmallPellet227" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(180, 68)
-
-[node name="SmallPellet228" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 68)
-
-[node name="SmallPellet229" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(204, 68)
-
-[node name="SmallPellet230" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 100)
-
-[node name="SmallPellet231" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 108)
-
-[node name="SmallPellet232" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 116)
-
-[node name="SmallPellet233" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 124)
-
-[node name="SmallPellet234" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 132)
-
-[node name="SmallPellet235" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 140)
-
-[node name="SmallPellet236" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 148)
-
-[node name="SmallPellet237" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 156)
-
-[node name="SmallPellet238" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 164)
-
-[node name="SmallPellet239" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 172)
-
-[node name="SmallPellet240" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 180)
-
-[node name="SmallPellet17" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(92, 68)
-
-[node name="SmallPellet18" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(84, 68)
-
-[node name="SmallPellet19" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 68)
-
-[node name="SmallPellet20" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(68, 68)
-
-[node name="SmallPellet21" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(60, 68)
-
-[node name="SmallPellet22" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 68)
-
-[node name="SmallPellet23" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 60)
-
-[node name="SmallPellet24" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 52)
-
-[node name="SmallPellet25" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 44)
-
-[node name="SmallPellet26" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 44)
-
-[node name="SmallPellet27" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 60)
-
-[node name="SmallPellet28" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 68)
-
-[node name="SmallPellet29" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(20, 68)
-
-[node name="SmallPellet30" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 68)
-
-[node name="SmallPellet31" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(36, 68)
-
-[node name="SmallPellet32" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(44, 68)
-
-[node name="SmallPellet33" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 76)
-
-[node name="SmallPellet34" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 84)
-
-[node name="SmallPellet35" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 92)
-
-[node name="SmallPellet36" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(20, 92)
-
-[node name="SmallPellet37" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 92)
-
-[node name="SmallPellet38" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(36, 92)
-
-[node name="SmallPellet39" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(44, 92)
-
-[node name="SmallPellet40" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 92)
-
-[node name="SmallPellet41" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 84)
-
-[node name="SmallPellet42" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 76)
-
-[node name="SmallPellet43" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 100)
-
-[node name="SmallPellet44" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 108)
-
-[node name="SmallPellet45" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 116)
-
-[node name="SmallPellet46" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 124)
-
-[node name="SmallPellet47" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 132)
-
-[node name="SmallPellet48" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 140)
-
-[node name="SmallPellet49" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 148)
-
-[node name="SmallPellet50" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 156)
-
-[node name="SmallPellet51" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 164)
-
-[node name="SmallPellet52" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 172)
-
-[node name="SmallPellet53" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 180)
-
-[node name="SmallPellet54" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 188)
-
-[node name="SmallPellet55" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 196)
-
-[node name="SmallPellet56" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 204)
-
-[node name="SmallPellet57" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 212)
-
-[node name="SmallPellet58" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 220)
-
-[node name="SmallPellet59" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 228)
-
-[node name="SmallPellet60" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 236)
-
-[node name="SmallPellet61" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(44, 236)
-
-[node name="SmallPellet62" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(36, 236)
-
-[node name="SmallPellet63" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 236)
-
-[node name="SmallPellet64" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(20, 236)
-
-[node name="SmallPellet65" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 236)
-
-[node name="SmallPellet66" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(44, 188)
-
-[node name="SmallPellet67" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(36, 188)
-
-[node name="SmallPellet68" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 188)
-
-[node name="SmallPellet69" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(20, 188)
-
-[node name="SmallPellet70" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 188)
-
-[node name="SmallPellet71" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 196)
-
-[node name="SmallPellet72" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 204)
-
-[node name="SmallPellet73" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(20, 212)
-
-[node name="SmallPellet74" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 212)
-
-[node name="SmallPellet75" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 220)
-
-[node name="SmallPellet76" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 228)
-
-[node name="SmallPellet77" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 244)
-
-[node name="SmallPellet78" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 252)
-
-[node name="SmallPellet79" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(12, 260)
-
-[node name="SmallPellet80" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(20, 260)
-
-[node name="SmallPellet81" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(28, 260)
-
-[node name="SmallPellet82" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(36, 260)
-
-[node name="SmallPellet83" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(44, 260)
-
-[node name="SmallPellet84" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(52, 260)
-
-[node name="SmallPellet85" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(60, 260)
-
-[node name="SmallPellet86" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(68, 260)
-
-[node name="SmallPellet87" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 260)
-
-[node name="SmallPellet88" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(84, 260)
-
-[node name="SmallPellet89" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(92, 260)
-
-[node name="SmallPellet90" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 260)
-
-[node name="SmallPellet91" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(108, 260)
-
-[node name="SmallPellet92" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(116, 260)
-
-[node name="SmallPellet93" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 260)
-
-[node name="SmallPellet94" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(132, 260)
-
-[node name="SmallPellet95" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(140, 260)
-
-[node name="SmallPellet96" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 260)
-
-[node name="SmallPellet97" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(156, 260)
-
-[node name="SmallPellet98" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(164, 260)
-
-[node name="SmallPellet99" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 260)
-
-[node name="SmallPellet100" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(180, 260)
-
-[node name="SmallPellet101" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(188, 260)
-
-[node name="SmallPellet102" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 260)
-
-[node name="SmallPellet103" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(204, 260)
-
-[node name="SmallPellet104" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 260)
-
-[node name="SmallPellet105" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 252)
-
-[node name="SmallPellet106" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 244)
-
-[node name="SmallPellet107" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 236)
-
-[node name="SmallPellet108" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(204, 236)
-
-[node name="SmallPellet109" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 236)
-
-[node name="SmallPellet110" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 228)
-
-[node name="SmallPellet111" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 220)
-
-[node name="SmallPellet112" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 212)
-
-[node name="SmallPellet113" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(204, 212)
-
-[node name="SmallPellet114" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 204)
-
-[node name="SmallPellet115" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 196)
-
-[node name="SmallPellet116" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(212, 188)
-
-[node name="SmallPellet117" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(204, 188)
-
-[node name="SmallPellet118" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(196, 188)
-
-[node name="SmallPellet119" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(188, 188)
-
-[node name="SmallPellet120" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(180, 188)
-
-[node name="SmallPellet121" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 188)
-
-[node name="SmallPellet122" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 196)
-
-[node name="SmallPellet123" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 204)
-
-[node name="SmallPellet124" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 212)
-
-[node name="SmallPellet125" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 220)
-
-[node name="SmallPellet126" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 228)
-
-[node name="SmallPellet127" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(172, 236)
-
-[node name="SmallPellet128" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(180, 236)
-
-[node name="SmallPellet129" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(188, 236)
-
-[node name="SmallPellet130" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(164, 212)
-
-[node name="SmallPellet131" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(156, 212)
-
-[node name="SmallPellet132" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 212)
-
-[node name="SmallPellet133" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(140, 212)
-
-[node name="SmallPellet134" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(132, 212)
-
-[node name="SmallPellet135" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 212)
-
-[node name="SmallPellet136" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 204)
-
-[node name="SmallPellet160" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 196)
-
-[node name="SmallPellet161" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 188)
-
-[node name="SmallPellet162" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(132, 188)
-
-[node name="SmallPellet163" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(140, 188)
-
-[node name="SmallPellet164" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 188)
-
-[node name="SmallPellet165" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(156, 188)
-
-[node name="SmallPellet166" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(164, 188)
-
-[node name="SmallPellet167" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 188)
-
-[node name="SmallPellet168" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 196)
-
-[node name="SmallPellet169" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(92, 188)
-
-[node name="SmallPellet170" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(84, 188)
-
-[node name="SmallPellet171" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 188)
-
-[node name="SmallPellet172" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(68, 188)
-
-[node name="SmallPellet173" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(60, 188)
-
-[node name="SmallPellet137" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 204)
-
-[node name="SmallPellet138" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 212)
-
-[node name="SmallPellet139" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(92, 212)
-
-[node name="SmallPellet140" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(84, 212)
-
-[node name="SmallPellet141" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 212)
-
-[node name="SmallPellet142" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(68, 212)
-
-[node name="SmallPellet143" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(60, 212)
-
-[node name="SmallPellet144" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 220)
-
-[node name="SmallPellet145" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 228)
-
-[node name="SmallPellet146" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(76, 236)
-
-[node name="SmallPellet147" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(84, 236)
-
-[node name="SmallPellet148" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(92, 236)
-
-[node name="SmallPellet149" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 236)
-
-[node name="SmallPellet150" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 244)
-
-[node name="SmallPellet151" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(100, 252)
-
-[node name="SmallPellet152" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 252)
-
-[node name="SmallPellet153" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 244)
-
-[node name="SmallPellet154" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(124, 236)
-
-[node name="SmallPellet155" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(132, 236)
-
-[node name="SmallPellet156" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(140, 236)
-
-[node name="SmallPellet157" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 236)
-
-[node name="SmallPellet158" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 228)
-
-[node name="SmallPellet159" parent="Pellets" instance=ExtResource("3_evsoa")]
-position = Vector2(148, 220)
-
-[node name="LargePellet" parent="Pellets" instance=ExtResource("4_7lkad")]
-position = Vector2(12, 52)
-
-[node name="LargePellet2" parent="Pellets" instance=ExtResource("4_7lkad")]
-position = Vector2(212, 52)
-
-[node name="LargePellet3" parent="Pellets" instance=ExtResource("4_7lkad")]
-position = Vector2(212, 212)
-
-[node name="LargePellet4" parent="Pellets" instance=ExtResource("4_7lkad")]
-position = Vector2(12, 212)
-
 [node name="Player" parent="." instance=ExtResource("2_u6ueq")]
 position = Vector2(108, 212)
 
@@ -1002,28 +266,121 @@ theme_override_fonts/font = ExtResource("5_71uuh")
 text = "00"
 vertical_alignment = 1
 
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(112, 116)
-
 [node name="Ghosts" type="Node2D" parent="."]
 
-[node name="Blinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker") instance=ExtResource("9_ii1yy")]
+[node name="Blinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("9_ii1yy")]
 position = Vector2(112, 116)
 player = NodePath("../../Player")
-out_of_house_marker = NodePath("../../Marker2D")
+out_of_house_marker = NodePath("../../Markers/Marker2D")
+scatter_path_parent = NodePath("../../Markers/BlinkyPath")
 
-[node name="Pinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker") instance=ExtResource("10_qynnv")]
+[node name="Pinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("10_qynnv")]
 position = Vector2(96, 140)
 player = NodePath("../../Player")
-out_of_house_marker = NodePath("../../Marker2D")
+out_of_house_marker = NodePath("../../Markers/Marker2D")
+scatter_path_parent = NodePath("../../Markers/PinkyPath")
 
-[node name="Inky" parent="Ghosts" node_paths=PackedStringArray("blinky", "player", "out_of_house_marker") instance=ExtResource("11_hb36q")]
+[node name="Inky" parent="Ghosts" node_paths=PackedStringArray("blinky", "player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("11_hb36q")]
 position = Vector2(112, 140)
 blinky = NodePath("../Blinky")
 player = NodePath("../../Player")
-out_of_house_marker = NodePath("../../Marker2D")
+out_of_house_marker = NodePath("../../Markers/Marker2D")
+scatter_path_parent = NodePath("../../Markers/InkyPath")
 
-[node name="Clyde" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker") instance=ExtResource("12_gdoqj")]
+[node name="Clyde" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("12_gdoqj")]
 position = Vector2(128, 140)
 player = NodePath("../../Player")
-out_of_house_marker = NodePath("../../Marker2D")
+out_of_house_marker = NodePath("../../Markers/Marker2D")
+scatter_path_parent = NodePath("../../Markers/ClydePath")
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="Markers"]
+position = Vector2(112, 116)
+
+[node name="BlinkyPath" type="Node2D" parent="Markers"]
+
+[node name="BlinkyPathNode1" type="Marker2D" parent="Markers/BlinkyPath"]
+position = Vector2(212, 36)
+
+[node name="BlinkyPathNode2" type="Marker2D" parent="Markers/BlinkyPath"]
+position = Vector2(212, 68)
+
+[node name="BlinkyPathNode3" type="Marker2D" parent="Markers/BlinkyPath"]
+position = Vector2(172, 68)
+
+[node name="BlinkyPathNode4" type="Marker2D" parent="Markers/BlinkyPath"]
+position = Vector2(172, 36)
+
+[node name="PinkyPath" type="Node2D" parent="Markers"]
+
+[node name="PinkyPathNode1" type="Marker2D" parent="Markers/PinkyPath"]
+position = Vector2(12, 36)
+
+[node name="PinkyPathNode2" type="Marker2D" parent="Markers/PinkyPath"]
+position = Vector2(12, 68)
+
+[node name="PinkyPathNode3" type="Marker2D" parent="Markers/PinkyPath"]
+position = Vector2(52, 68)
+
+[node name="PinkyPathNode4" type="Marker2D" parent="Markers/PinkyPath"]
+position = Vector2(52, 36)
+
+[node name="InkyPath" type="Node2D" parent="Markers"]
+
+[node name="InkyPathNode1" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(212, 260)
+
+[node name="InkyPathNode2" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(124, 260)
+
+[node name="InkyPathNode3" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(124, 236)
+
+[node name="InkyPathNode4" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(148, 236)
+
+[node name="InkyPathNode5" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(148, 212)
+
+[node name="InkyPathNode6" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(172, 212)
+
+[node name="InkyPathNode7" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(172, 236)
+
+[node name="InkyPathNode8" type="Marker2D" parent="Markers/InkyPath"]
+position = Vector2(212, 236)
+
+[node name="ClydePath" type="Node2D" parent="Markers"]
+
+[node name="ClydePathNode1" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(12, 260)
+
+[node name="ClydePathNode2" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(100, 260)
+
+[node name="ClydePathNode3" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(100, 236)
+
+[node name="ClydePathNode4" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(76, 236)
+
+[node name="ClydePathNode5" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(76, 212)
+
+[node name="ClydePathNode6" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(52, 212)
+
+[node name="ClydePathNode7" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(52, 236)
+
+[node name="ClydePathNode8" type="Marker2D" parent="Markers/ClydePath"]
+position = Vector2(12, 236)
+
+[node name="ScatterTimer" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="ScatterTimer" to="." method="_on_scatter_timer_timeout"]

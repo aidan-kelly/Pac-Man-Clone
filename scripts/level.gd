@@ -11,3 +11,11 @@ func on_stat_change():
 func on_player_hit():
 	if get_tree():
 		get_tree().reload_current_scene()
+
+func _on_scatter_timer_timeout() -> void:
+	if Globals.scatter:
+		$ScatterTimer.wait_time = 20
+	else:
+		$ScatterTimer.wait_time = 7
+	$ScatterTimer.start()
+	Globals.scatter = !Globals.scatter

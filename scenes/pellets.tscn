@@ -1,0 +1,739 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxtujfykadhx2"]
+
+[ext_resource type="PackedScene" uid="uid://cma5r611xfoyn" path="res://scenes/small_pellet.tscn" id="1_878ts"]
+[ext_resource type="PackedScene" uid="uid://bxx4nd6iwfk1x" path="res://scenes/large_pellet.tscn" id="2_gxqcs"]
+
+[node name="Pellets" type="Node2D"]
+z_index = 1
+
+[node name="SmallPellet" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 36)
+
+[node name="SmallPellet2" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(20, 36)
+
+[node name="SmallPellet3" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 36)
+
+[node name="SmallPellet4" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(36, 36)
+
+[node name="SmallPellet5" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(44, 36)
+
+[node name="SmallPellet6" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 36)
+
+[node name="SmallPellet7" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(60, 36)
+
+[node name="SmallPellet8" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(68, 36)
+
+[node name="SmallPellet9" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 36)
+
+[node name="SmallPellet10" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(84, 36)
+
+[node name="SmallPellet11" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(92, 36)
+
+[node name="SmallPellet12" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 36)
+
+[node name="SmallPellet13" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 44)
+
+[node name="SmallPellet14" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 52)
+
+[node name="SmallPellet15" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 60)
+
+[node name="SmallPellet16" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 68)
+
+[node name="SmallPellet174" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 76)
+
+[node name="SmallPellet175" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 84)
+
+[node name="SmallPellet176" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 92)
+
+[node name="SmallPellet177" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(84, 92)
+
+[node name="SmallPellet178" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(92, 92)
+
+[node name="SmallPellet179" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 92)
+
+[node name="SmallPellet180" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 92)
+
+[node name="SmallPellet181" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(132, 92)
+
+[node name="SmallPellet182" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(140, 92)
+
+[node name="SmallPellet183" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 92)
+
+[node name="SmallPellet184" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 84)
+
+[node name="SmallPellet185" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 76)
+
+[node name="SmallPellet186" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 68)
+
+[node name="SmallPellet187" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(140, 68)
+
+[node name="SmallPellet188" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(132, 68)
+
+[node name="SmallPellet189" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 68)
+
+[node name="SmallPellet190" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(116, 68)
+
+[node name="SmallPellet191" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(108, 68)
+
+[node name="SmallPellet192" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 60)
+
+[node name="SmallPellet193" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 52)
+
+[node name="SmallPellet194" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 44)
+
+[node name="SmallPellet195" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 36)
+
+[node name="SmallPellet196" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(132, 36)
+
+[node name="SmallPellet197" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(140, 36)
+
+[node name="SmallPellet198" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 36)
+
+[node name="SmallPellet199" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(156, 36)
+
+[node name="SmallPellet200" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(164, 36)
+
+[node name="SmallPellet201" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 36)
+
+[node name="SmallPellet202" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(180, 36)
+
+[node name="SmallPellet203" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(188, 36)
+
+[node name="SmallPellet204" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 36)
+
+[node name="SmallPellet205" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(204, 36)
+
+[node name="SmallPellet206" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 36)
+
+[node name="SmallPellet207" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 44)
+
+[node name="SmallPellet208" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 60)
+
+[node name="SmallPellet209" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 68)
+
+[node name="SmallPellet210" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 76)
+
+[node name="SmallPellet211" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 84)
+
+[node name="SmallPellet212" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 92)
+
+[node name="SmallPellet213" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(204, 92)
+
+[node name="SmallPellet214" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 92)
+
+[node name="SmallPellet215" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(188, 92)
+
+[node name="SmallPellet216" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(180, 92)
+
+[node name="SmallPellet217" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 92)
+
+[node name="SmallPellet218" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 84)
+
+[node name="SmallPellet219" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 76)
+
+[node name="SmallPellet220" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 68)
+
+[node name="SmallPellet221" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(164, 68)
+
+[node name="SmallPellet222" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(156, 68)
+
+[node name="SmallPellet223" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 60)
+
+[node name="SmallPellet224" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 52)
+
+[node name="SmallPellet225" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 44)
+
+[node name="SmallPellet226" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(188, 68)
+
+[node name="SmallPellet227" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(180, 68)
+
+[node name="SmallPellet228" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 68)
+
+[node name="SmallPellet229" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(204, 68)
+
+[node name="SmallPellet230" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 100)
+
+[node name="SmallPellet231" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 108)
+
+[node name="SmallPellet232" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 116)
+
+[node name="SmallPellet233" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 124)
+
+[node name="SmallPellet234" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 132)
+
+[node name="SmallPellet235" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 140)
+
+[node name="SmallPellet236" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 148)
+
+[node name="SmallPellet237" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 156)
+
+[node name="SmallPellet238" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 164)
+
+[node name="SmallPellet239" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 172)
+
+[node name="SmallPellet240" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 180)
+
+[node name="SmallPellet17" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(92, 68)
+
+[node name="SmallPellet18" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(84, 68)
+
+[node name="SmallPellet19" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 68)
+
+[node name="SmallPellet20" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(68, 68)
+
+[node name="SmallPellet21" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(60, 68)
+
+[node name="SmallPellet22" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 68)
+
+[node name="SmallPellet23" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 60)
+
+[node name="SmallPellet24" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 52)
+
+[node name="SmallPellet25" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 44)
+
+[node name="SmallPellet26" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 44)
+
+[node name="SmallPellet27" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 60)
+
+[node name="SmallPellet28" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 68)
+
+[node name="SmallPellet29" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(20, 68)
+
+[node name="SmallPellet30" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 68)
+
+[node name="SmallPellet31" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(36, 68)
+
+[node name="SmallPellet32" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(44, 68)
+
+[node name="SmallPellet33" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 76)
+
+[node name="SmallPellet34" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 84)
+
+[node name="SmallPellet35" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 92)
+
+[node name="SmallPellet36" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(20, 92)
+
+[node name="SmallPellet37" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 92)
+
+[node name="SmallPellet38" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(36, 92)
+
+[node name="SmallPellet39" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(44, 92)
+
+[node name="SmallPellet40" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 92)
+
+[node name="SmallPellet41" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 84)
+
+[node name="SmallPellet42" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 76)
+
+[node name="SmallPellet43" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 100)
+
+[node name="SmallPellet44" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 108)
+
+[node name="SmallPellet45" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 116)
+
+[node name="SmallPellet46" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 124)
+
+[node name="SmallPellet47" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 132)
+
+[node name="SmallPellet48" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 140)
+
+[node name="SmallPellet49" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 148)
+
+[node name="SmallPellet50" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 156)
+
+[node name="SmallPellet51" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 164)
+
+[node name="SmallPellet52" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 172)
+
+[node name="SmallPellet53" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 180)
+
+[node name="SmallPellet54" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 188)
+
+[node name="SmallPellet55" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 196)
+
+[node name="SmallPellet56" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 204)
+
+[node name="SmallPellet57" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 212)
+
+[node name="SmallPellet58" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 220)
+
+[node name="SmallPellet59" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 228)
+
+[node name="SmallPellet60" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 236)
+
+[node name="SmallPellet61" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(44, 236)
+
+[node name="SmallPellet62" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(36, 236)
+
+[node name="SmallPellet63" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 236)
+
+[node name="SmallPellet64" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(20, 236)
+
+[node name="SmallPellet65" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 236)
+
+[node name="SmallPellet66" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(44, 188)
+
+[node name="SmallPellet67" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(36, 188)
+
+[node name="SmallPellet68" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 188)
+
+[node name="SmallPellet69" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(20, 188)
+
+[node name="SmallPellet70" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 188)
+
+[node name="SmallPellet71" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 196)
+
+[node name="SmallPellet72" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 204)
+
+[node name="SmallPellet73" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(20, 212)
+
+[node name="SmallPellet74" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 212)
+
+[node name="SmallPellet75" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 220)
+
+[node name="SmallPellet76" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 228)
+
+[node name="SmallPellet77" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 244)
+
+[node name="SmallPellet78" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 252)
+
+[node name="SmallPellet79" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(12, 260)
+
+[node name="SmallPellet80" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(20, 260)
+
+[node name="SmallPellet81" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(28, 260)
+
+[node name="SmallPellet82" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(36, 260)
+
+[node name="SmallPellet83" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(44, 260)
+
+[node name="SmallPellet84" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(52, 260)
+
+[node name="SmallPellet85" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(60, 260)
+
+[node name="SmallPellet86" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(68, 260)
+
+[node name="SmallPellet87" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 260)
+
+[node name="SmallPellet88" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(84, 260)
+
+[node name="SmallPellet89" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(92, 260)
+
+[node name="SmallPellet90" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 260)
+
+[node name="SmallPellet91" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(108, 260)
+
+[node name="SmallPellet92" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(116, 260)
+
+[node name="SmallPellet93" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 260)
+
+[node name="SmallPellet94" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(132, 260)
+
+[node name="SmallPellet95" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(140, 260)
+
+[node name="SmallPellet96" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 260)
+
+[node name="SmallPellet97" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(156, 260)
+
+[node name="SmallPellet98" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(164, 260)
+
+[node name="SmallPellet99" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 260)
+
+[node name="SmallPellet100" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(180, 260)
+
+[node name="SmallPellet101" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(188, 260)
+
+[node name="SmallPellet102" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 260)
+
+[node name="SmallPellet103" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(204, 260)
+
+[node name="SmallPellet104" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 260)
+
+[node name="SmallPellet105" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 252)
+
+[node name="SmallPellet106" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 244)
+
+[node name="SmallPellet107" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 236)
+
+[node name="SmallPellet108" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(204, 236)
+
+[node name="SmallPellet109" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 236)
+
+[node name="SmallPellet110" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 228)
+
+[node name="SmallPellet111" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 220)
+
+[node name="SmallPellet112" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 212)
+
+[node name="SmallPellet113" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(204, 212)
+
+[node name="SmallPellet114" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 204)
+
+[node name="SmallPellet115" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 196)
+
+[node name="SmallPellet116" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(212, 188)
+
+[node name="SmallPellet117" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(204, 188)
+
+[node name="SmallPellet118" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(196, 188)
+
+[node name="SmallPellet119" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(188, 188)
+
+[node name="SmallPellet120" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(180, 188)
+
+[node name="SmallPellet121" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 188)
+
+[node name="SmallPellet122" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 196)
+
+[node name="SmallPellet123" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 204)
+
+[node name="SmallPellet124" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 212)
+
+[node name="SmallPellet125" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 220)
+
+[node name="SmallPellet126" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 228)
+
+[node name="SmallPellet127" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(172, 236)
+
+[node name="SmallPellet128" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(180, 236)
+
+[node name="SmallPellet129" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(188, 236)
+
+[node name="SmallPellet130" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(164, 212)
+
+[node name="SmallPellet131" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(156, 212)
+
+[node name="SmallPellet132" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 212)
+
+[node name="SmallPellet133" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(140, 212)
+
+[node name="SmallPellet134" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(132, 212)
+
+[node name="SmallPellet135" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 212)
+
+[node name="SmallPellet136" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 204)
+
+[node name="SmallPellet160" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 196)
+
+[node name="SmallPellet161" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 188)
+
+[node name="SmallPellet162" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(132, 188)
+
+[node name="SmallPellet163" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(140, 188)
+
+[node name="SmallPellet164" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 188)
+
+[node name="SmallPellet165" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(156, 188)
+
+[node name="SmallPellet166" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(164, 188)
+
+[node name="SmallPellet167" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 188)
+
+[node name="SmallPellet168" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 196)
+
+[node name="SmallPellet169" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(92, 188)
+
+[node name="SmallPellet170" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(84, 188)
+
+[node name="SmallPellet171" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 188)
+
+[node name="SmallPellet172" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(68, 188)
+
+[node name="SmallPellet173" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(60, 188)
+
+[node name="SmallPellet137" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 204)
+
+[node name="SmallPellet138" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 212)
+
+[node name="SmallPellet139" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(92, 212)
+
+[node name="SmallPellet140" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(84, 212)
+
+[node name="SmallPellet141" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 212)
+
+[node name="SmallPellet142" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(68, 212)
+
+[node name="SmallPellet143" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(60, 212)
+
+[node name="SmallPellet144" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 220)
+
+[node name="SmallPellet145" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 228)
+
+[node name="SmallPellet146" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(76, 236)
+
+[node name="SmallPellet147" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(84, 236)
+
+[node name="SmallPellet148" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(92, 236)
+
+[node name="SmallPellet149" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 236)
+
+[node name="SmallPellet150" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 244)
+
+[node name="SmallPellet151" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(100, 252)
+
+[node name="SmallPellet152" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 252)
+
+[node name="SmallPellet153" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 244)
+
+[node name="SmallPellet154" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(124, 236)
+
+[node name="SmallPellet155" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(132, 236)
+
+[node name="SmallPellet156" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(140, 236)
+
+[node name="SmallPellet157" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 236)
+
+[node name="SmallPellet158" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 228)
+
+[node name="SmallPellet159" parent="." instance=ExtResource("1_878ts")]
+position = Vector2(148, 220)
+
+[node name="LargePellet" parent="." instance=ExtResource("2_gxqcs")]
+position = Vector2(12, 52)
+
+[node name="LargePellet2" parent="." instance=ExtResource("2_gxqcs")]
+position = Vector2(212, 52)
+
+[node name="LargePellet3" parent="." instance=ExtResource("2_gxqcs")]
+position = Vector2(212, 212)
+
+[node name="LargePellet4" parent="." instance=ExtResource("2_gxqcs")]
+position = Vector2(12, 212)

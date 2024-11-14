@@ -67,6 +67,7 @@ animations = [{
 radius = 3.0
 
 [node name="Pinky" type="CharacterBody2D"]
+z_index = 2
 collision_layer = 2
 motion_mode = 1
 wall_min_slide_angle = 0.0
@@ -82,6 +83,9 @@ frame_progress = 0.389224
 shape = SubResource("CircleShape2D_yrsv1")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0.152941, 1, 1)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5

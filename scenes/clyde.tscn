@@ -67,6 +67,7 @@ animations = [{
 radius = 3.0
 
 [node name="Clyde" type="CharacterBody2D"]
+z_index = 2
 collision_layer = 2
 motion_mode = 1
 wall_min_slide_angle = 0.0
@@ -81,6 +82,9 @@ autoplay = "walk_right"
 shape = SubResource("CircleShape2D_usr8q")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
+debug_use_custom = true
+debug_path_custom_color = Color(1, 0.431373, 0.113725, 1)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
@@ -91,6 +95,11 @@ wait_time = 15.0
 one_shot = true
 autostart = true
 
+[node name="ClydeScatterTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
 [connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="LeaveHouseTimer" to="." method="_on_leave_house_timer_timeout"]
+[connection signal="timeout" from="ClydeScatterTimer" to="." method="_on_clyde_scatter_timer_timeout"]

@@ -9,3 +9,5 @@ var score_amount: int = 0:
 		if value != score_amount:
 			score_amount = value
 			stat_change.emit()
+
+var scatter: bool = false
