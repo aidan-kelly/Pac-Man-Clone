@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3thu0c62bwut"]
+
+[ext_resource type="Texture2D" uid="uid://bx04ouol726af" path="res://resources/sprites/seisware_logo.png" id="1_35ppr"]
+
+[node name="LivesImage" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_35ppr")
