@@ -3,6 +3,7 @@ extends Node
 signal stat_change
 signal level_passed
 signal game_over
+signal power_pellet_eaten
 
 const TILE_SIZE = 8
 const MAX_VISIBLE_PELLETS = 244
@@ -18,6 +19,13 @@ var score_amount: int = 0:
 				level_passed.emit()
 
 var scatter: bool = false
+
+var invinsible: bool = false:
+	set(value):
+		if value != invinsible:
+			invinsible = value
+			scatter = true
+			power_pellet_eaten.emit()
 
 var lives: int = 3:
 	set(value):
