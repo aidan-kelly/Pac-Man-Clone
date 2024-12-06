@@ -36,5 +36,4 @@ func score(amount_to_add: int) -> void:
 	Globals.score_amount += amount_to_add
 
 func hit() -> void:
-	Globals.lives -= 1
 	player_hit.emit()

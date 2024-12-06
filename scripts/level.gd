@@ -5,6 +5,7 @@ func _ready() -> void:
 	Globals.stat_change.connect(on_stat_change)
 	Globals.game_over.connect(on_game_over)
 	Globals.level_passed.connect(on_level_passed)
+	Globals.player_invuln = false
 	on_stat_change()
 	$Player.player_hit.connect(on_player_hit)
 	for i in Globals.lives:
@@ -17,11 +18,12 @@ func on_stat_change():
 		$UI/LivesContainer.remove_child($UI/LivesContainer.get_child(0))
 
 func on_player_hit():
-	Globals.scatter = false
-	if Globals.lives == 0:
-		print("Game over")
-	if get_tree():
-		get_tree().reload_current_scene()
+	if !Globals.player_invuln:
+		Globals.player_invuln = true
+		Globals.scatter = false
+		Globals.lives -= 1
+		if Globals.lives > 0 and get_tree():
+			get_tree().reload_current_scene()
 
 func _on_scatter_timer_timeout() -> void:
 	if Globals.scatter:
@@ -33,11 +35,10 @@ func _on_scatter_timer_timeout() -> void:
 
 func on_game_over():
 	print("Game over.")
-	pass
+	get_tree().change_scene_to_file("res://scenes/game_over_menu.tscn")
 
 func on_level_passed():
 	print("Level passed.")
 	if get_tree():
 		get_tree().reload_current_scene()
 	Pellets.reset_game()
-	

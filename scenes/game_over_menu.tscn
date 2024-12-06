@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://c84fxnyukefvg"]
+
+[ext_resource type="Script" path="res://scripts/game_over_menu.gd" id="1_ki2xa"]
+[ext_resource type="FontFile" uid="uid://c7asvn4jruopq" path="res://resources/fonts/PixelOperator8-Bold.ttf" id="1_ptr7b"]
+[ext_resource type="FontFile" uid="uid://cthjbqidca6cn" path="res://resources/fonts/PixelOperator8.ttf" id="2_fga23"]
+[ext_resource type="Theme" uid="uid://be5lfg327vkoi" path="res://themes/bold.tres" id="3_tks08"]
+
+[node name="GameOverMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ki2xa")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 224.0
+offset_bottom = 288.0
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 224.0
+offset_bottom = 288.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ptr7b")
+text = "Game Over!!!"
+horizontal_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fga23")
+theme_override_font_sizes/font_size = 8
+text = "XXXX points"
+horizontal_alignment = 1
+
+[node name="InitialLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fga23")
+theme_override_font_sizes/font_size = 8
+text = "Enter your initials:"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ptr7b")
+text = "AAA"
+alignment = 1
+max_length = 3
+
+[node name="SpacerLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_tks08")
+text = "Play Again"
+
+[node name="MainMenuButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_tks08")
+text = "Main Menu"
+
+[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_tks08")
+text = "Exit Game"
+
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/ExitGameButton" to="." method="_on_exit_game_button_pressed"]
