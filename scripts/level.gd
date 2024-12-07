@@ -5,7 +5,8 @@ func _ready() -> void:
 	Globals.stat_change.connect(on_stat_change)
 	Globals.game_over.connect(on_game_over)
 	Globals.level_passed.connect(on_level_passed)
-	Globals.player_invuln = false
+	Globals.power_pellet_eaten.connect(on_power_pellet_eaten)
+	Globals.processing_hit = false
 	on_stat_change()
 	$Player.player_hit.connect(on_player_hit)
 	for i in Globals.lives:
@@ -18,8 +19,8 @@ func on_stat_change():
 		$UI/LivesContainer.remove_child($UI/LivesContainer.get_child(0))
 
 func on_player_hit():
-	if !Globals.player_invuln:
-		Globals.player_invuln = true
+	if !Globals.processing_hit:
+		Globals.processing_hit = true
 		Globals.scatter = false
 		Globals.lives -= 1
 		if Globals.lives > 0 and get_tree():
@@ -42,3 +43,13 @@ func on_level_passed():
 	if get_tree():
 		get_tree().reload_current_scene()
 	Pellets.reset_game()
+
+func on_power_pellet_eaten():
+	$ScatterTimer.stop()
+	$PowerPelletTimer.start()
+
+func _on_power_pellet_timer_timeout() -> void:
+	$ScatterTimer.wait_time = 20
+	$ScatterTimer.start()
+	Globals.scatter = false
+	Globals.invinsible = false

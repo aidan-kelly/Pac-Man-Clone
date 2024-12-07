@@ -14,9 +14,15 @@ var allowed_out = true
 
 func _physics_process(delta: float) -> void:
 	if !allowed_out:
+		if Globals.invinsible:
+			$AnimatedSprite2D.play("scared")
+		else:
+			$AnimatedSprite2D.play("walk_right")
 		return
 	var dir = to_local(nav_agent.get_next_path_position()).normalized()
-	if abs(dir.x) > abs(dir.y):
+	if Globals.invinsible:
+			$AnimatedSprite2D.play("scared")
+	elif abs(dir.x) > abs(dir.y):
 		if dir.x > 0:
 			$AnimatedSprite2D.flip_h = false
 			$AnimatedSprite2D.play("walk_right")
@@ -35,7 +41,11 @@ func _physics_process(delta: float) -> void:
 		var collision = get_slide_collision(i)
 		var collider = collision.get_collider()
 		if "hit" in collider:
-			collider.hit()
+			if Globals.invinsible:
+				#Just deleting them for right now.
+				queue_free()
+			else:
+				collider.hit()
 
 func make_path() -> void:
 	if out_of_house:

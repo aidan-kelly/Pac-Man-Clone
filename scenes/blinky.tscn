@@ -132,7 +132,7 @@ script = ExtResource("1_be1te")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_w0x5s")
-animation = &"eaten_down"
+animation = &"walk_right"
 autoplay = "walk_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

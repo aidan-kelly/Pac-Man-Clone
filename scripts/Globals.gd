@@ -23,14 +23,14 @@ var score_amount: int = 0:
 
 var scatter: bool = false
 
-var player_invuln: bool = true
+var processing_hit: bool = true
 
 var invinsible: bool = false:
 	set(value):
-		if value != invinsible:
-			invinsible = value
+		if value == true:
 			scatter = true
 			power_pellet_eaten.emit()
+		invinsible = value
 
 var lives: int = 3:
 	set(value):
