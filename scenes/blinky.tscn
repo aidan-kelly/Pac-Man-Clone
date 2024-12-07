@@ -139,7 +139,6 @@ autoplay = "walk_right"
 shape = SubResource("CircleShape2D_ldsds")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-debug_enabled = true
 debug_use_custom = true
 debug_path_custom_color = Color(1, 0.0588235, 0.188235, 1)
 

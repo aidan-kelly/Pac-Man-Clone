@@ -20,8 +20,8 @@ func _on_exit_game_button_pressed() -> void:
 
 func save_score() -> void:
 	var record = {
-	"name" : $MarginContainer/VBoxContainer/LineEdit.text,
-	"high_score" : Globals.score_amount
+		"name" : $MarginContainer/VBoxContainer/LineEdit.text,
+		"high_score" : Globals.score_amount
 	}
 	print(record)
 	Globals.score_records.push_back(record)
