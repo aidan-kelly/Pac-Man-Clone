@@ -43,6 +43,9 @@ func on_level_passed():
 	if get_tree():
 		get_tree().reload_current_scene()
 	Pellets.reset_game()
+	Globals.invinsible = false
+	Globals.scatter = false
+	$PowerPelletTimer.stop()
 
 func on_power_pellet_eaten():
 	$ScatterTimer.stop()

@@ -60,6 +60,7 @@ func reset_game() -> void:
 	score_amount = 0
 	lives = 3
 	scatter = false
+	invinsible = false
 
 func my_sort(a: Dictionary, b: Dictionary):
 	if a["high_score"] > b["high_score"]:
