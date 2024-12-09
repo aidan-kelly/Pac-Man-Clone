@@ -282,35 +282,42 @@ position = Vector2(112, 212)
 
 [node name="Ghosts" type="Node2D" parent="."]
 
-[node name="Blinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("9_ii1yy")]
+[node name="Blinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent", "return_home_marker") instance=ExtResource("9_ii1yy")]
 position = Vector2(112, 116)
 player = NodePath("../../Player")
 out_of_house_marker = NodePath("../../Markers/Marker2D")
 scatter_path_parent = NodePath("../../Markers/BlinkyPath")
+return_home_marker = NodePath("../../Markers/ReturnMarker")
 
-[node name="Pinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("10_qynnv")]
+[node name="Pinky" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent", "return_home_marker") instance=ExtResource("10_qynnv")]
 position = Vector2(96, 140)
 player = NodePath("../../Player")
 out_of_house_marker = NodePath("../../Markers/Marker2D")
 scatter_path_parent = NodePath("../../Markers/PinkyPath")
+return_home_marker = NodePath("../../Markers/ReturnMarker")
 
-[node name="Inky" parent="Ghosts" node_paths=PackedStringArray("blinky", "player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("11_hb36q")]
+[node name="Inky" parent="Ghosts" node_paths=PackedStringArray("blinky", "player", "out_of_house_marker", "scatter_path_parent", "return_home_marker") instance=ExtResource("11_hb36q")]
 position = Vector2(112, 140)
 blinky = NodePath("../Blinky")
 player = NodePath("../../Player")
 out_of_house_marker = NodePath("../../Markers/Marker2D")
 scatter_path_parent = NodePath("../../Markers/InkyPath")
+return_home_marker = NodePath("../../Markers/ReturnMarker")
 
-[node name="Clyde" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent") instance=ExtResource("12_gdoqj")]
+[node name="Clyde" parent="Ghosts" node_paths=PackedStringArray("player", "out_of_house_marker", "scatter_path_parent", "return_home_marker") instance=ExtResource("12_gdoqj")]
 position = Vector2(128, 140)
 player = NodePath("../../Player")
 out_of_house_marker = NodePath("../../Markers/Marker2D")
 scatter_path_parent = NodePath("../../Markers/ClydePath")
+return_home_marker = NodePath("../../Markers/ReturnMarker")
 
 [node name="Markers" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="Markers"]
 position = Vector2(112, 116)
+
+[node name="ReturnMarker" type="Marker2D" parent="Markers"]
+position = Vector2(112, 140)
 
 [node name="BlinkyPath" type="Node2D" parent="Markers"]
 

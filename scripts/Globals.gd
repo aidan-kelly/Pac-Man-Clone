@@ -25,12 +25,12 @@ var scatter: bool = false
 
 var processing_hit: bool = true
 
-var invinsible: bool = false:
+var invincible: bool = false:
 	set(value):
 		if value == true:
 			scatter = true
 			power_pellet_eaten.emit()
-		invinsible = value
+		invincible = value
 
 var lives: int = 3:
 	set(value):
@@ -60,7 +60,7 @@ func reset_game() -> void:
 	score_amount = 0
 	lives = 3
 	scatter = false
-	invinsible = false
+	invincible = false
 
 func my_sort(a: Dictionary, b: Dictionary):
 	if a["high_score"] > b["high_score"]:
