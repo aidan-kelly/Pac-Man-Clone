@@ -13,16 +13,22 @@ var scatter_index = 0
 var out_of_house = false
 var allowed_out = true
 var eaten = false
+var scared = false
+var scatter = false
+
+func _ready() -> void:
+	Globals.scatter_change.connect(on_scatter_change)
+	Globals.power_pellet_eaten.connect(on_power_pellet_eaten)
 
 func _physics_process(delta: float) -> void:
 	if !allowed_out:
-		if Globals.invincible:
+		if scared:
 			$AnimatedSprite2D.play("scared")
 		else:
 			$AnimatedSprite2D.play("walk_right")
 		return
 	var dir = to_local(nav_agent.get_next_path_position()).normalized()
-	if Globals.invincible and !eaten:
+	if scared and !eaten:
 			$AnimatedSprite2D.play("scared")
 	elif abs(dir.x) > abs(dir.y):
 		if dir.x > 0:
@@ -57,9 +63,10 @@ func _physics_process(delta: float) -> void:
 		var collision = get_slide_collision(i)
 		var collider = collision.get_collider()
 		if "hit" in collider:
-			if Globals.invincible:
+			if scared and !eaten:
 				eaten = true
-			else:
+				Globals.score_amount += 500
+			elif !scared:
 				collider.hit()
 
 func make_path() -> void:
@@ -79,7 +86,7 @@ func make_scatter_path() -> void:
 		nav_agent.target_position = out_of_house_marker.global_position
 
 func _on_timer_timeout() -> void:
-	if Globals.scatter:
+	if scatter:
 		make_scatter_path()
 	else:
 		make_path()
@@ -90,6 +97,8 @@ func _on_navigation_agent_2d_target_reached() -> void:
 	elif eaten:
 		out_of_house = false
 		eaten = false
+		scatter = false
+		scared = false
 	else:
 		if scatter_index == scatter_path.size() - 1:
 			scatter_index = 0
@@ -98,3 +107,11 @@ func _on_navigation_agent_2d_target_reached() -> void:
 
 func _on_leave_house_timer_timeout() -> void:
 	allowed_out = true
+
+func on_scatter_change() -> void:
+	if !Globals.scatter:
+		scared = false
+	scatter = Globals.scatter
+
+func on_power_pellet_eaten() -> void:
+	scared = true

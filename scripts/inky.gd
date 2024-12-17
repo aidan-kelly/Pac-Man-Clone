@@ -3,6 +3,7 @@ extends GhostBase
 @export var blinky : Node2D
 
 func _ready() -> void:
+	super()
 	allowed_out = false
 
 func make_path() -> void:

@@ -4,6 +4,7 @@ signal stat_change
 signal level_passed
 signal game_over
 signal power_pellet_eaten
+signal scatter_change
 
 const TILE_SIZE = 8
 const MAX_VISIBLE_PELLETS = 244
@@ -15,13 +16,18 @@ func _init() -> void:
 var score_amount: int = 0:
 	set(value):
 		if value != score_amount:
-			visible_pellets -= 1
+			print("Score = " + str(value) + " Visible pellets = " + str(visible_pellets))
+			if(value-score_amount == 10 || value-score_amount == 50):
+				visible_pellets -= 1
 			score_amount = value
 			stat_change.emit()
 			if visible_pellets == 0:
 				level_passed.emit()
 
-var scatter: bool = false
+var scatter: bool = false:
+	set(value):
+		scatter = value
+		scatter_change.emit()
 
 var processing_hit: bool = true
 

@@ -1,6 +1,7 @@
 extends GhostBase
 
 func _ready() -> void:
+	super()
 	allowed_out = false
 
 func make_path() -> void:

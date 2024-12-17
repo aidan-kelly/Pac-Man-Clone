@@ -3,6 +3,7 @@ extends GhostBase
 var clyde_scatter = false
 
 func _ready() -> void:
+	super()
 	allowed_out = false
 
 func make_path() -> void:
